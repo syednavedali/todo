@@ -1,0 +1,146 @@
+categories
+{
+    "_id" : ObjectId("58f762b6ee2cc55371901b84"),
+    "name" : "Kids"
+}
+{
+    "_id" : ObjectId("58f762d3ee2cc55371901b90"),
+    "name" : "Adult"
+}
+{
+    "_id" : ObjectId("58f762e0ee2cc55371901b92"),
+    "name" : "Road Side"
+}
+{
+    "_id" : ObjectId("58f762eeee2cc55371901b94"),
+    "name" : "Animal"
+}
+{
+    "_id" : ObjectId("58f762fbee2cc55371901b98"),
+    "name" : "Advertisement"
+}
+________________
+postType
+
+{
+    "_id" : ObjectId("58f616e8ee2cc55371900987"),
+    "type" : "Image"
+}
+{
+    "_id" : ObjectId("58f88b37ee2cc55371902ee3"),
+    "type" : "GIF"
+}
+{
+    "_id" : ObjectId("58f88b4eee2cc55371902eee"),
+    "type" : "Video"
+}
+{
+    "_id" : ObjectId("58f88b5fee2cc55371902ef6"),
+    "type" : "Audio"
+}
+{
+    "_id" : ObjectId("58f88b73ee2cc55371902efd"),
+    "type" : "Text"
+}
+{
+    "_id" : ObjectId("58f88b82ee2cc55371902f02"),
+    "type" : "External URL"
+}
+________________
+posts
+________________
+{
+    "_id" : ObjectId("58f60c60ee2cc553719007d0"),
+    "title" : "first post",
+    "by" : "admin",
+    "onCreate" : "4/18/2017, 15:22:09",
+    "onEdit" : "",
+    "hostIp" : "127.0.0.1",
+    "tags" : [ 
+        "animal", 
+        "cats", 
+        "zoo"
+    ],
+    "postCategory" : "Kids",
+    "resource" : "/awr/crt/2014/cat.gif",
+    "type" : "GIF",
+    "hearts" : [ 
+        {
+            "by" : "raj",
+            "hostIp" : "127.0.0.2",
+            "onCreate" : "4/18/2017, 15:22:09"
+        }, 
+        {
+            "by" : "kumar",
+            "hostIp" : "127.0.0.3",
+            "onCreate" : "4/18/2017, 15:22:09"
+        }
+    ],
+    "dishearts" : [ 
+        {
+            "by" : "raj",
+            "hostIp" : "127.0.0.2",
+            "onCreate" : "4/18/2017, 15:22:09"
+        }, 
+        {
+            "by" : "kumar",
+            "hostIp" : "127.0.0.3",
+            "onCreate" : "4/18/2017, 15:22:09"
+        }
+    ],
+    "reviewer" : {
+        "by" : "raj",
+        "hostIp" : "127.0.0.2",
+        "onCreate" : "4/18/2017, 15:22:09"
+    },
+    "offence" : [ 
+        {
+            "by" : "raj",
+            "hostIp" : "127.0.0.2",
+            "onCreate" : "4/18/2017, 15:22:09",
+            "text" : "not a kids Image"
+        }, 
+        {
+            "by" : "kumar",
+            "hostIp" : "127.0.0.3",
+            "onCreate" : "4/18/2017, 15:22:09",
+            "text" : "not a kids Image"
+        }
+    ],
+    "comments" : [ 
+        {
+            "by" : "raj",
+            "hostIp" : "127.0.0.2",
+            "onCreate" : "4/18/2017, 15:22:09",
+            "text" : "some comment text"
+        }, 
+        {
+            "by" : "kumar",
+            "hostIp" : "127.0.0.3",
+            "onCreate" : "4/18/2017, 15:22:09",
+            "text" : "some comment text"
+        }
+    ],
+    "isVisible" : "false"
+}________________
+User
+________________{
+    "_id" : ObjectId("58f6162aee2cc5537190095c"),
+    "fgId" : "Hero 121",
+    "userId" : "fb/google id",
+    "device" : "android/iphone",
+    "deviceDetails" : "samsung/htc version etc",
+    "email" : "user@abc.com",
+    "phone" : "9826098260",
+    "phoneVerified" : "Y/N",
+    "loginDetails" : [ 
+        {
+            "datetime" : "4/18/2017 16:12:23",
+            "ip" : "127.0.0.1"
+        }, 
+        {
+            "datetime" : "4/18/2017 16:12:23",
+            "ip" : "127.0.0.1"
+        }
+    ]
+}
