@@ -14,7 +14,9 @@
                 "restify-jwt" : "*",
                 "jsonwebtoken" : "*",
                 "crypto-js" : "*",
-                "crypto" : "*"
+                "crypto" : "*",
+                "moment" :"*",
+                "moment-timezone" : "*"
         },
         "devDependencies": {
                 "nodeunit": "0.9.1"

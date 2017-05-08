@@ -123,7 +123,7 @@ function usage(msg) {
     LOG.debug(options, 'command line arguments parsed');
 
     // First setup our 'database'
-    var dir = path.normalize((options.directory || '/tmp') + '/todos');
+    /*var dir = path.normalize((options.directory || '/dev/tmp') + '/todos');
 
     try {
         fs.mkdirSync(dir);
@@ -132,10 +132,10 @@ function usage(msg) {
             LOG.fatal(e, 'unable to create "database" %s', dir);
             process.exit(1);
         }
-    }
+    }*/
 
     var server = todo.createServer({
-        directory: dir,
+        //directory: dir,
         log: LOG
     });
 
