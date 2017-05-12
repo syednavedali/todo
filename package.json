@@ -16,7 +16,8 @@
                 "crypto-js" : "*",
                 "crypto" : "*",
                 "moment" :"*",
-                "moment-timezone" : "*"
+                "moment-timezone" : "*",
+		"multi-rest" : "*"
         },
         "devDependencies": {
                 "nodeunit": "0.9.1"
