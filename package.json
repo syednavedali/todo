@@ -17,7 +17,7 @@
                 "crypto" : "*",
                 "moment" :"*",
                 "moment-timezone" : "*",
-		"multi-rest" : "*"
+                "uuid": "^3.0.1"
         },
         "devDependencies": {
                 "nodeunit": "0.9.1"

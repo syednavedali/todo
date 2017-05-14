@@ -1,0 +1,102 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "multi-rest@*",
+        "scope": null,
+        "escapedName": "multi-rest",
+        "name": "multi-rest",
+        "rawSpec": "*",
+        "spec": "*",
+        "type": "range"
+      },
+      "C:\\Users\\ehawk\\workspace\\fungram"
+    ]
+  ],
+  "_from": "multi-rest@*",
+  "_id": "multi-rest@1.4.5",
+  "_inCache": true,
+  "_location": "/multi-rest",
+  "_nodeVersion": "6.6.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/multi-rest-1.4.5.tgz_1485953411418_0.8759834666270763"
+  },
+  "_npmUser": {
+    "name": "mmahrous",
+    "email": "m.mahrous.94@gmail.com"
+  },
+  "_npmVersion": "3.10.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "multi-rest@*",
+    "scope": null,
+    "escapedName": "multi-rest",
+    "name": "multi-rest",
+    "rawSpec": "*",
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/multi-rest/-/multi-rest-1.4.5.tgz",
+  "_shasum": "6e5b0b4dc086348b1ec0bb28876d2cd63ff3d68d",
+  "_shrinkwrap": null,
+  "_spec": "multi-rest@*",
+  "_where": "C:\\Users\\ehawk\\workspace\\fungram",
+  "author": {
+    "name": "M.Mahrous",
+    "email": "m.mahrous.94@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/mmahrous/multi-rest/issues"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.7.22",
+    "file-extension": "^3.0.2",
+    "fs-extra": "^0.30.0",
+    "mime": "^1.3.4",
+    "thumbler": "^1.1.1-1",
+    "uuid": "^3.0.1"
+  },
+  "description": "A middleware to handle multi-part request for restify",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "6e5b0b4dc086348b1ec0bb28876d2cd63ff3d68d",
+    "tarball": "https://registry.npmjs.org/multi-rest/-/multi-rest-1.4.5.tgz"
+  },
+  "gitHead": "a9da4f956e8d363ae99893477dd443f6e85ee517",
+  "homepage": "https://github.com/mmahrous/multi-rest#readme",
+  "keywords": [
+    "restify",
+    "multi-part",
+    "upload",
+    "mulitparty",
+    "api",
+    "s3",
+    "aws",
+    "amazon"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "mmahrous",
+      "email": "m.mahrous.94@gmail.com"
+    }
+  ],
+  "name": "multi-rest",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmahrous/multi-rest.git"
+  },
+  "scripts": {
+    "start": "node index",
+    "test": ""
+  },
+  "version": "1.4.5"
+}
