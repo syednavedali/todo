@@ -1,5 +1,3 @@
-// Copyright (c) 2012 Mark Cavage. All rights reserved.
-
 var fs = require('fs');
 var path = require('path');
 
@@ -7,10 +5,7 @@ var bunyan = require('bunyan');
 var getopt = require('posix-getopt');
 var restify = require('restify');
 
-var todo = require('./lib');
-
-
-///--- Globals
+var fungram = require('./lib');
 
 var NAME = 'fungram';
 
@@ -58,14 +53,11 @@ var LOG = bunyan.createLogger({
 function parseOptions() {
     var option;
     var opts = {};
-    var parser = new getopt.BasicParser('hvd:p:u:z:', process.argv);
+    var parser = new getopt.BasicParser('hv:p:u:z:', process.argv);
 
     while ((option = parser.getopt()) !== undefined) {
         switch (option.option) {
-            case 'd':
-                opts.directory = path.normalize(option.optarg);
-                break;
-
+            
             case 'h':
                 usage();
                 break;
@@ -109,7 +101,7 @@ function usage(msg) {
 
     var str = 'usage: ' +
         NAME +
-        ' [-v] [-d dir] [-p port] [-u user] [-z password]';
+        ' [-v] [-p port] [-u user] [-z password]';
     console.error(str);
     process.exit(msg ? 1 : 0);
 }
@@ -122,20 +114,7 @@ function usage(msg) {
 
     LOG.debug(options, 'command line arguments parsed');
 
-    // First setup our 'database'
-    /*var dir = path.normalize((options.directory || '/dev/tmp') + '/todos');
-
-    try {
-        fs.mkdirSync(dir);
-    } catch (e) {
-        if (e.code !== 'EEXIST') {
-            LOG.fatal(e, 'unable to create "database" %s', dir);
-            process.exit(1);
-        }
-    }*/
-
-    var server = todo.createServer({
-        //directory: dir,
+    var server = fungram.createServer({
         log: LOG
     });
 
